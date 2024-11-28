@@ -13,6 +13,6 @@ const prompt = require('prompt-sync')();
  */
 
 let celsius = Number (prompt('Insert temperature in °C: '));
-let fahrenheit = (celsius * 9 / 5) + 32;
+const fahrenheit = (celsius * 9 / 5) + 32;
 
 console.log(`Temperature in °F: ${fahrenheit}`);
