@@ -7,6 +7,6 @@
 const prompt = require('prompt-sync')();
 
 let username = prompt("Hello, what's your name? ");
-let userage = prompt(`How old are you ${username}? `);
-console.log(`Nice to meet you ${username}, your age is ${userage} years.`);
+let age = prompt(`How old are you ${username}? `);
+console.log(`Nice to meet you ${username}, your age is ${age} years.`);
 
