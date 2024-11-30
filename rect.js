@@ -11,3 +11,12 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+let delka = parseFloat(prompt("Zadejte delku obdelniku:"));
+let sirka = parseFloat(prompt("Zadejte sirku obdelniku:"));
+
+let obvod = 2 * (delka + sirka);
+let obsah = delka * sirka;
+
+console.log(`Obvod obdelniku: ${obvod}`);
+console.log(`Obsah obdelniku: ${obsah}`);

@@ -11,3 +11,10 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+let vek = parseInt(prompt("Zadejte svůj věk:"));
+let aktualniRok = 2024;
+
+let rokNarozeni = aktualniRok - vek;
+
+console.log(`Váš rok narození je: ${rokNarozeni}`);

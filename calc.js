@@ -12,3 +12,16 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+let cislo1 = parseFloat(prompt("Zadejte první číslo:"));
+let cislo2 = parseFloat(prompt("Zadejte druhé číslo:"));
+
+let soucet = cislo1 + cislo2;
+let rozdil = cislo1 - cislo2;
+let nasobeni = cislo1 * cislo2;
+let deleni = cislo2 !== 0 ? cislo1 / cislo2 : "Nelze dělit nulou";
+
+console.log(`Součet: ${soucet}`);
+console.log(`Rozdíl: ${rozdil}`);
+console.log(`Násobení: ${nasobeni}`);
+console.log(`Dělení: ${deleni}`);

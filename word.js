@@ -12,3 +12,10 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+let puvodniSlovo = prompt("Zadejte slovo:");
+
+let noveSlovo = puvodniSlovo + "-ka";
+
+console.log(`Původní slovo: ${puvodniSlovo}`);
+console.log(`Nové slovo: ${noveSlovo}`);
