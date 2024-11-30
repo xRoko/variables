@@ -11,3 +11,13 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+
+let delka = prompt ("Zadej delku a:");
+let sirka = prompt ("Zadej delku b:");
+
+
+console.log(`Vypocet obvodu je: ${(2*(delka + sirka)) }`);
+console.log(`Vypocet obsah je: ${(delka * sirka) }`);
+console.log(`Vypocet obsah je: ${ delka+sirka }`);
+console.log(`Vypocet obsah je: ${ 5+2 }`);

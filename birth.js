@@ -11,3 +11,8 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+let age = prompt('Jaký je tvuj rok narozeni?');
+const rok = 2024;
+
+console.log(`Tvuj vek je: ${rok - age}`);
