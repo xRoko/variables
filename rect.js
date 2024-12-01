@@ -21,3 +21,4 @@ console.log(`Vypocet obvodu je: ${(2*(delka + sirka)) }`);
 console.log(`Vypocet obsah je: ${(delka * sirka) }`);
 console.log(`Vypocet obsah je: ${ delka+sirka }`);
 console.log(`Vypocet obsah je: ${ 5+2 }`);
+

@@ -16,3 +16,4 @@ let celsia = prompt('Napis kolik je stupni celsia?');
 
 
 console.log (`Prepocet z celsia na Fahrenheita je: ${celsia *1.8+32}`);
+

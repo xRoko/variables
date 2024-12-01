@@ -46,3 +46,4 @@ console.log(`Za ${userMoney}CZK dostanes: ${(userMoney / huf).toFixed(3)}HUF`);
 console.log(`Za ${userMoney}CZK dostanes: ${(userMoney / nor).toFixed(1)}NOR`);
 console.log(`Za ${userMoney}CZK dostanes: ${(userMoney / huf).toFixed(0)}HUF`);
 
+

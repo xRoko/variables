@@ -18,4 +18,3 @@ const pridat = "ka";
 
 console.log(` ${slovo + pridat}`);
 
-
