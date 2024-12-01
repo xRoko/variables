@@ -7,8 +7,8 @@
 
 const prompt = require('prompt-sync')();
 
-let num1 = Number(prompt("Zvolte si prosím první číslo: "));
-let num2 = Number(prompt("Zvolte si prosím druhé číslo: "));
+let num1 = parseFloat(prompt("Zvolte si prosím první číslo: "));
+let num2 = parseFloat(prompt("Zvolte si prosím druhé číslo: "));
 
 console.log(`Vaše první zvolené číslo je ${num1}, a druhé zvolené číslo je ${num2}. 
 Jejich součet je ${(num1 + num2)}. 
