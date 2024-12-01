@@ -17,3 +17,5 @@ let slovo = prompt('Napis slovo: ');
 const pridat = "ka";
 
 console.log(` ${slovo + pridat}`);
+
+

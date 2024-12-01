@@ -21,3 +21,4 @@ console.log(`Vypocet krat je: ${cislo1*cislo2}`);
 console.log(`Vypocet deleno je: ${cislo1/cislo2}`);
 console.log(`Vypocet plus je: ${cislo1+cislo2}`);
 console.log(`Vypocet minus je: ${cislo1-cislo2}`);
+
