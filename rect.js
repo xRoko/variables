@@ -1,13 +1,14 @@
-/*
-    Úloha: Vytvor program, ktorý požaduje od používateľa hodnoty dĺžky a šírky obdlžníka.
-    Vypočítaj obvod a obsah, a zobraz výsledky v konzole.
-    Rada: Obvod obdlžníka je (2 * (dĺžka + šírka)) a obsah je (dĺžka * šírka).
- */
-
 const prompt = require('prompt-sync')();
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+console.log(``);
+const side_a = parseFloat(prompt('Prosím, zadaj rozmery obdlžnika v centimetroch: strana a= '));
+const side_b = parseFloat(prompt('Prosím, zadaj rozmery obdlžnika v centimetroch: strana b= '));
+
+let circumference = 2 * (side_a + side_b);
+let area = side_a * side_b;
+console.log(``);
+console.log(`Obvod obdlžnika: O = 2 * (a + b)`);
+console.log(`Obvod obdlžnika: O = ${circumference} cm`);
+console.log(``);
+console.log(`Obsah obdlžnika: S = a * b `);
+console.log(`Obsah obdlžnika: S = ${area} cm^2`);
