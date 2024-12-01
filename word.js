@@ -1,14 +1,9 @@
-/*
-    Úloha: Napíš program, ktorý zoberie slovo od používateľa
-    a vytvorí nové slovo tak, že k nemu pridá „-ka“ na konci.
-    Vypíš pôvodné a nové slovo do konzoly.
-    Rada: Premenná na uchovávanie pôvodného slova a nového slova bude užitočná.
- */
-
 const prompt = require('prompt-sync')();
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+console.log(``);
+const original_word = (prompt('Prosím, zadaj lubovolne slovo:  '));
+
+console.log(``);
+console.log(`Povodné slovo je  "${original_word}" \n`);
+
+console.log(`Nové slovo je  "${original_word}ka"`);
