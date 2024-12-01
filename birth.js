@@ -1,13 +1,8 @@
-/*
-    Úloha: Napíš program, ktorý požaduje vek používateľa a vypočíta
-    jeho rok narodenia na základe aktuálneho roka. Výsledok vypíš do konzoly.
-    Rada: Ak aktuálny rok je 2024, rok narodenia vypočítaj ako (2024 - vek).
- */
 
 const prompt = require('prompt-sync')();
+const username = prompt ('What is your name?');
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+let userage = prompt ('Please, write your age here:');
+const year = 2024 - userage;
+
+console.log(`Hey ${username}, you were born in ${year}!`);
