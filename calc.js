@@ -12,3 +12,16 @@ const prompt = require('prompt-sync')();
     const name = prompt('What is your name?');
     console.log(`Hey there ${name}`);
  */
+
+let cislo1 = parseFloat(prompt("Zadejte prvni cislo:"));
+let cislo2 = parseFloat(prompt("Zadejte druhe cislo:"));
+
+let scitani = cislo1 + cislo2;
+let odcitani = cislo1 - cislo2
+let deleni = cislo1 / cislo2
+let nasobeni = cislo1 * cislo2
+
+console.log("Scitani: " + scitani);
+console.log("odcitani: " + odcitani);
+console.log("deleni: " + deleni);
+console.log("nasobeni: " + nasobeni);
