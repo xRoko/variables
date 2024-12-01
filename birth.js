@@ -17,3 +17,5 @@ const rok = 2024;
 
 console.log(`Tvuj vek je: ${rok - age}`);
 
+
+
