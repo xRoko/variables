@@ -7,6 +7,14 @@
 
 const prompt = require('prompt-sync')();
 
+console.log('Ahoj, chceš si pridať za meno "-ka"? Nech sa páči.');
+
+let name = (prompt(`Zadaj svoje meno:`));
+
+    let pridanieKa = name + 'ka'
+
+console.log(`Tvoje pôvodné meno: ${name}`);
+console.log(`Tvoje nové meno: ${pridanieKa}`);
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');

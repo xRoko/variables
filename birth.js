@@ -6,6 +6,14 @@
 
 const prompt = require('prompt-sync')();
 
+console.log('Ahoj, zisti rok, kedy si sa narodil.');
+let vek = (prompt("Zadaj svoj vek: "));
+
+let aktualnyRok = 2024;
+let rokNarodenia = aktualnyRok - vek;
+
+console.log(`Tvoj rok narodenia je: ${rokNarodenia}`);
+
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');
