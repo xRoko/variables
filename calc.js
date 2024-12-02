@@ -7,8 +7,24 @@
 
 const prompt = require('prompt-sync')();
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+console.log(`Welcome to the best calculator ever!`);
+let numberOne = Number(prompt(`Write number one: `));
+let numberTwo = Number(prompt(`Write number two: `));
+
+// A)String
+console.log(`${numberOne} + ${numberTwo} = ${numberOne + numberTwo}`);
+console.log(`${numberOne} - ${numberTwo} = ${ numberOne - numberTwo}`);
+console.log(`${numberOne} * ${numberTwo} = ${ numberOne * numberTwo}`);
+console.log(`${numberOne} / ${numberTwo} = ${ numberOne / numberTwo}`);
+
+console.log(`___________________________________________`);
+// B)Variables
+let addition = numberOne + numberTwo;
+let subtraction = numberOne - numberTwo;
+let multiplication = numberOne * numberTwo;
+let division = numberOne / numberTwo;
+
+console.log(`${numberOne} + ${numberTwo} = ${addition}`);
+console.log(`${numberOne} - ${numberTwo} = ${subtraction}`);
+console.log(`${numberOne} * ${numberTwo} = ${multiplication}`);
+console.log(`${numberOne} / ${numberTwo} = ${division}`);

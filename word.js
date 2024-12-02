@@ -7,8 +7,13 @@
 
 const prompt = require('prompt-sync')();
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+console.log(`Welcome to the "Ka" world!`);
+let kaLess = prompt(`Tell me your "Ka" less word: `);
+
+// A) String
+console.log(`Here is the better version of your word: ${kaLess + "-ka"}`);
+
+console.log(`_______________________________`);
+// B) Variables
+let ka = kaLess + "-ka";
+console.log(`Here is the better version of your word: ${ka}`);

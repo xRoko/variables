@@ -6,8 +6,13 @@
 
 const prompt = require('prompt-sync')();
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+console.log(`Welcome to the convertor from °C to °F!`);
+let temp = Number(prompt(`What is your local area temperature in °C: `));
+
+// A) String
+console.log(`Your local area temperature in °F is: ${9/5 * temp + 32}`);
+
+console.log(`_________________________________`);
+// B) Variables
+let weirdTemp = 9/5 * temp + 32;
+console.log(`Your local area temperature in °F is: ${weirdTemp}`);

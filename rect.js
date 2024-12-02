@@ -6,8 +6,18 @@
 
 const prompt = require('prompt-sync')();
 
-/*
-    EXAMPLE USAGE
-    const name = prompt('What is your name?');
-    console.log(`Hey there ${name}`);
- */
+console.log(`Welcome to the rectangle calculator!`)
+let width = Number(prompt(`What is your rectangle's width: `));
+let length = Number(prompt(`What is your rectangle's height:`));
+
+// A) String
+console.log(`Rectangle perimeter is: ${2*(width + length)}`);
+console.log(`Rectangle area is: ${width * length}`);
+
+console.log(`_______________________________`);
+// B) Variables
+let perimeter = 2*(width + length);
+let area = width * length;
+
+console.log(`Rectangle perimeter is: ${perimeter}`);
+console.log(`Rectangle area is: ${area}`);
