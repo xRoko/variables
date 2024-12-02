@@ -6,6 +6,12 @@
 
 const prompt = require('prompt-sync')();
 
+let yearofbirth = prompt('Kolik je tobe let? ');
+
+let year = 2024;
+
+console.log(`${year-43}`);
+
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');

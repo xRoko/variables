@@ -7,6 +7,12 @@
 
 const prompt = require('prompt-sync')();
 
+let puvodnislovo = prompt('napis puvodni slovo ');
+let noveslovo = puvodnislovo + "ka";
+
+console.log(`puvodnislovo: ${puvodnislovo}`);
+console.log(`noveslovo: ${noveslovo}`);
+
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');
