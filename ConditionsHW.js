@@ -59,3 +59,11 @@ if (!isNaN(numberOne) && !isNaN(numberTwo) && !isNaN(numberThree)) {
     }
     console.log(`${greatest} is the greatest number.`);
 } else console.log(`One of your numbers is not a number.`)
+
+// 5. Palindrome Checker
+
+// 6. Prime Number Checker
+
+// 7. Anagram Checker
+
+// 8. Password Strenght Checker
