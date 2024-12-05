@@ -61,9 +61,85 @@ if (!isNaN(numberOne) && !isNaN(numberTwo) && !isNaN(numberThree)) {
 } else console.log(`One of your numbers is not a number.`)
 
 // 5. Palindrome Checker
+console.log(`\n5. Palindrome Checker`)
+let text = prompt('Enter a word to check if its a Palindrome: ');
+
+let textStriped = text.replace(/\s+/g, '');
+textStriped = textStriped.replace(/[.,\/#!?$%&*;:{}=\-_`~()'"]/g, "");
+textStriped = textStriped.toLowerCase();
+isPal = textStriped.split("").reverse().join("");
+
+if (isPal === textStriped) {
+    console.log(`${text} is a Palindrome!`);
+} else {
+    console.log(`${text} is not a Palindrome!`);
+}
 
 // 6. Prime Number Checker
+console.log(`\n6. Prime Number Checker`)
+let primeNum = parseInt(prompt(`Enter a number to check if its prime number: `));
+
+if (!isNaN(primeNum)) {
+    if (!(primeNum <= 1)) {
+        if (!(primeNum === 2)) {
+            if (!(primeNum % 2 === 0)) {
+                const sqRoot = Math.sqrt(primeNum);
+                isPrime = true;
+                for (let i = 3; i <= sqRoot; i += 2) {
+                    if (primeNum % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime) {
+                    console.log(`${primeNum} is a Prime Number.`);
+                } else {
+                    console.log(`${primeNum} is not a Prime Number.`);
+                }
+            } else {
+                console.log(`${primeNum} is not a Prime number.`);
+            }
+        } else {
+            console.log(`${primeNum} is Prime number.`);
+        }
+    } else {
+        console.log(`${primeNum} is not a Prime number.`);
+    }
+} else {
+    console.log(`Value entered is not a number.`)
+}
 
 // 7. Anagram Checker
+console.log(`\n7. Anagram Checker`)
+let wordOne = prompt('Enter a word or a phrase number one: ');
+let wordTwo = prompt('Enter a word or a phrase number two: ');
+
+let wordOneStripped = wordOne.replace(/\s+/g, '');
+wordOneStripped = wordOneStripped.replace(/[.,\/#!?$%&*;:{}=\-_`~()'"]/g, "");
+wordOneStripped = wordOneStripped.toLowerCase();
+wordOneStripped = wordOneStripped.split("").sort().join("");
+
+let wordTwoStripped = wordTwo.replace(/\s+/g, '');
+wordTwoStripped = wordTwoStripped.replace(/[.,\/#!?$%&*;:{}=\-_`~()'"]/g, "");
+wordTwoStripped = wordTwoStripped.toLowerCase();
+wordTwoStripped = wordTwoStripped.split("").sort().join("");
+
+if (wordOneStripped === wordTwoStripped) {
+    console.log(`${wordOne} and ${wordTwo} are Anagrams!`);
+} else {
+    console.log(`${wordOne} and ${wordTwo} are not Anagrams!`);
+}
 
 // 8. Password Strenght Checker
+console.log(`\n8. Password Strenght Checker`)
+let password = prompt('Enter your password: ');
+
+if (password.length > 8) {
+    if ((/[A-Z]/.test(password)) && (/[a-z]/.test(password))) {
+        console.log(`Password Strenght: Strong`);
+    } else {
+        console.log(`Password Strenght: Medium`);
+    }
+} else {
+    console.log(`Password Strenght: Weak`)
+}
