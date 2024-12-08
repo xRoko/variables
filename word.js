@@ -7,6 +7,10 @@
 
 const prompt = require('prompt-sync')();
 
+let slovo = prompt('Zadejte prosím slovo:');
+
+console.log(`Úpravou vašeho původního slova "${slovo}" vznikne slovo "${slovo}ka".`);
+
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');

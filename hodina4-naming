@@ -1,0 +1,87 @@
+//Camel case
+let Cat = "Cica" //this is wrong
+let cat = "Cica" //this is right
+
+let VeryLongString = "long one" //this is how you input a long variable name - first lowercase, other uppercase
+
+//Snake case
+let very_long_string = "long one" //also correct; pick one and use it. mostly Camel is used.
+
+//pouzivani mezer:
+let variable = "ahoj" //let mezera variable mezera = mezera "nazev"
+console.log(variable); //mezera se pro console.log nikam nedává
+//function (arg1, arg2) {
+//}
+//if (1 ===1) //pod if se to vzdy odsunuje tabulátorem nebo 4 mezerami
+    //console.log(very_long_string);
+
+
+//CONDITIONS
+
+// if (10 <= 0) {
+
+// } else {
+
+// };
+
+
+// UKOL
+// Od uzivatele si vyptat číslo, převést string na číslo!, a zeptat se jestli je sudé nebo liché
+
+const prompt = require('prompt-sync')();
+// let cislo = parseFloat(prompt("Prosím zadejte číslo:"));
+
+// toto je základní zápis toho, jak zjistit, jestli je sudé nebo liché. ALE - co když zadám text?
+// if (cislo % 2 ===0) {
+//     console.log(`Vaše číslo ${cislo} je sudé.`)
+// } else {
+//     console.log(`Vaše číslo ${cislo} je liché.`)
+// };
+
+
+// tady si dame podminku - jestli to je cislo - tedy znegovaná funkce "jestli toto není číslo", tím uděláme "jestli to je číslo"
+// tak se executne ten náš if na sudé/liché; a pokud to je false - tedy není to číslo - tak se executne ten else, co vynadá
+
+// if ((!isNaN(cislo)) && parseFloat(cislo !== 0)) { //pokud je promenna číslo and jestli se promenna nerovná nule. pokud se rovna nule, hodi to false
+//     if (cislo % 2 ===0) {
+//         console.log(`Vaše číslo ${cislo} je sudé.`)
+//     } else {
+//         console.log(`Vaše číslo ${cislo} je liché.`)
+//     }
+// } else {
+//     console.log("To neni cislo, nebo jsi mi dal 0.")
+// };
+//
+// console.log("Pokud to nebylo číslo, napíše se true:" + isNaN(cislo));5
+
+
+
+//UKOL
+// pustit jen zeny nad 18
+// let user on website only if she is a woman aged >= 18
+
+//  toto je reseni pomoci and &&
+
+// let gender = prompt("What is your gender? Type male / female:");
+// let age = parseFloat(prompt("What is your age? Type an integer:"));
+//
+// if ((gender == "female") && (age >= 18)) {
+//     console.log("Welcome to our website, woman aged 18 (or over)!")
+// } else {
+//     console.log("You are not allowed in!")
+// };
+
+// toto je reseni pomoci vnorene podminky.. to mi prijde vic chaoticke! je tezky se v tom vyznat. ALE - konkrétnější false response!
+
+let gender = prompt("What is your gender? Type male / female:");
+let age = parseFloat(prompt("What is your age? Type an integer:"));
+
+if (age >= 18) {
+    if (gender == "female") {
+        console.log("Welcome to our website!")
+    } else {
+        console.log("You are not a woman!")
+    }
+} else {
+    console.log("You are not of age!")
+};

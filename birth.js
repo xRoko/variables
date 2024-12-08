@@ -6,6 +6,11 @@
 
 const prompt = require('prompt-sync')();
 
+let VEK = prompt("What is your age?");
+
+//console.log('If your age is' ${VEK} ', that means that you were born in" ${2024-VEK}');
+console.log(`If your age is ${VEK}, that means that you were born in ${2024-VEK}.`);
+
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');

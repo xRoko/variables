@@ -6,6 +6,10 @@
 
 const prompt = require('prompt-sync')();
 
+let celsius = Number(prompt('Zadejte teplotu ve °C:'));
+
+console.log(`Vámi zadaná teplota ${celsius}°C se rovná ${celsius*(9/5)+32}°F.`);
+
 /*
     EXAMPLE USAGE
     const name = prompt('What is your name?');
