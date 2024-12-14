@@ -16,3 +16,4 @@ let teplotaCelsius = (5 / 9) * (teplotaFahrenheit - 32);
 
 console.log("Teplota ve Fahrenheit: " + teplotaFahrenheit + "°F");
 console.log("Teplota v Celsius: " + teplotaCelsius.toFixed(2) + "°C");
+
